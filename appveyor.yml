@@ -6,12 +6,15 @@ build: false
   
 install:
   - SET PATH=%PYTHON%;%PYTHON%\Scripts;%path%
-  - where cl.exe
+  #- where cl.exe
   - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
   - where cl.exe
   - choco install mingw
+  - where cl.exe
   - choco install llvm
+  - where cl.exe
   - choco install make -y
+  - where cl.exe
   - "%PYTHON%/Scripts/pip.exe install setuptools"
   - "%PYTHON%/Scripts/pip.exe install python-dateutil"
   - "%PYTHON%/Scripts/pip.exe install numpy"
